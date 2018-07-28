@@ -1,0 +1,10 @@
+.friendImg {
+    height: 100px;
+    width: 100px;
+}
+
+.friendFinderH1 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0 0 0 20px;
+}
