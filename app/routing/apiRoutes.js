@@ -54,10 +54,12 @@ function findFriend(user) {
             subDiff = Math.abs(user.scores[m] - friendsArray[i].scores[m])
             diff = diff + subDiff
         }
-        if(diff < smallestDiff) {
-            friend = friendsArray[i]
-            smallestDiff = diff
-        }    
+        if (diff <= smallestDiff) {
+            if (friendsArray[i].name !== user.name) {
+                friend = friendsArray[i]
+                smallestDiff = diff
+            }
+        }
     }
     return friend
 }
